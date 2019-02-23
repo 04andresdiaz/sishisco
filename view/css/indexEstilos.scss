@@ -1,0 +1,141 @@
+@import url('fuentes.css');
+$fuentesTitulos: 'Coiny', cursive;
+$fuentesTextos: 'Felipa', cursive;
+body{
+  background-image: url("../img/fondoIndex.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.main{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.75);
+  height: 100%;
+  width: 100%;
+}
+.header {
+  & .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & p{
+      color: #fff;
+      margin-top: 30px;
+      font-family: $fuentesTitulos;
+      font-size: 3em;
+    }
+  }
+}
+.body{
+  height: 380px;
+  & .titleBodyLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & p{
+      margin-top: 20px;
+      font-size: 25px;
+      color: #fff;
+      letter-spacing: 2px;
+    }
+  }
+  & .boxText{
+    position: relative;
+    width: 20%;
+    margin-left: 40%;
+    & input{
+      background: transparent;
+      box-sizing: border-box;
+      border-radius: 4px;
+      border: 1px solid #aaa;
+      color: #aaa;
+      font-size: 20px;
+      height: 32px;
+      margin-top: 20PX;
+      width: 100%;
+      outline: 0px;
+      padding-left: 30px;
+      transition: .3s;
+      letter-spacing: 2px;
+    }
+    & i{
+      position: absolute;
+      left: 0;
+      top: 25px;
+      padding: 0px 5px;
+      font-size: 22px;
+      color: #757575;
+      transition: .3s;
+    }
+    & input:focus{
+      color: #fff;
+      border-color: #fff;
+    }
+    & input:focus + i{
+      color: #fff;
+      border-color: #fff;
+    }
+  }
+  .boxBntoLogin{
+    display: flex;
+    justify-content: center;
+    & input{
+      margin-top: 30px;
+      height: 35px;
+      width: 180px;
+      font-family: $fuentesTitulos;
+      font-size: 1.5em;
+      font-weight: 100;
+      cursor: pointer;
+      background: rgb(0, 129, 24);
+      border: solid 1px rgb(0, 129, 24);
+      color: #eee;
+      border-radius: 5px;
+      letter-spacing: 2px;
+    }
+  }
+  & .helpBox{
+    width: 20%;
+    margin-left: (85% / 2);
+    text-align: right;
+    & p{
+      margin-top: 30px;
+      color: blue;
+      color: yellow;
+      font-size: 20px;
+    }
+    & a{
+      color: rgb(12, 181, 44);
+      font-size: 18px;
+    }
+  }
+}
+.mensajes{
+  width: 20%;
+  margin-top: 40px;
+  margin-left: (80% / 2);
+  font-size: 22px;
+  display: none;
+}
+.mensajesError{
+  display: none;
+  background: tomato;
+  color: #fff;
+  text-align: center;
+}
+.mensajesErrorUserPass{
+  display: none;
+  background: rgb(3, 114, 194);
+  color: #fff;
+  text-align: center;
+}
+.foot{
+  & div{
+    display: flex;
+    justify-content: center;
+    & p{
+      margin-top: 130px;
+      font-size: 1.5em;
+      color: #ccc;
+    }
+  }
+}
